@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="efp__app_name">ExFilePicker</string>
+    <string name="efp__action_grid">Grille</string>
+    <string name="efp__action_list">Liste</string>
+
+    <string-array name="efp__size_units">
+        <item>o</item>
+        <item>K</item>
+        <item>M</item>
+        <item>G</item>
+        <item>T</item>
+        <item>P</item>
+    </string-array>
+
+    <string name="efp__empty_directory">空目录</string>
+    <string name="efp__action_select_all">全选</string>
+    <string name="efp__action_deselect">全不选</string>
+    <string name="efp__action_invert_selection">反选</string>
+    <string name="efp__new_folder">新建目录</string>
+    <string name="efp__folder_name_hint">目录名提示</string>
+    <string name="efp__folder_created">创建目录</string>
+    <string name="efp__folder_not_created">目录没创建</string>
+    <string name="efp__folder_already_exists">目录已存在</string>
+    <string name="efp__sort">排序</string>
+
+    <string-array name="efp__sorting_types">
+        <item>按名称升序</item>
+        <item>按名称降序</item>
+        <item>按大小升序</item>
+        <item>按大小降序</item>
+        <item>按日期升序</item>
+        <item>按日期降序</item>
+    </string-array>
+
+</resources>

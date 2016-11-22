@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:id="@+id/RelativeLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="4dp"
+        android:gravity="center_vertical"
         tools:ignore="UselessParent">
 
         <ImageView
@@ -16,30 +17,33 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
             android:contentDescription="@string/efp__app_name"
             android:scaleType="centerInside"
-            android:src="@android:drawable/stat_sys_download_done"/>
+            android:src="@android:drawable/stat_sys_download_done" />
 
-        <TextView
-            android:id="@+id/filename"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
             android:layout_marginLeft="7dp"
-            android:layout_marginTop="7dp"
             android:layout_toRightOf="@+id/thumbnail"
-            android:text="@string/efp__app_name"
-            android:textAppearance="?android:attr/textAppearanceMedium"/>
+            android:gravity="center_vertical"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/filesize"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/filename"
-            android:layout_below="@+id/filename"
-            android:text="@string/efp__app_name"
-            android:textAppearance="?android:attr/textAppearanceSmall"/>
+            <TextView
+                android:id="@+id/filename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/efp__app_name"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/filesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/efp__app_name"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
 
         <CheckBox
             android:id="@+id/checkbox"
@@ -49,7 +53,7 @@
             android:layout_centerVertical="true"
             android:clickable="false"
             android:focusable="false"
-            android:visibility="gone"/>
+            android:visibility="gone" />
     </RelativeLayout>
 
 </LinearLayout>

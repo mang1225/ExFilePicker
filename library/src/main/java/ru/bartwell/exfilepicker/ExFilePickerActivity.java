@@ -634,10 +634,12 @@ public class ExFilePickerActivity extends Activity implements OnLongClickListene
             TextView filename = (TextView) convertView.findViewById(R.id.filename);
             filename.setText(file.getName());
 
+         
             TextView filesize = (TextView) convertView.findViewById(R.id.filesize);
             if (filesize != null) {
                 if (file.isFile()) filesize.setText(getHumanFileSize(file.length()));
-                else filesize.setText("");
+                else
+                    filesize.setVisibility(View.GONE);
             }
 
             return convertView;
